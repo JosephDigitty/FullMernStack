@@ -5,6 +5,6 @@ const port = process.env.PORT || 5000
 const app = express ()
 
 
-app.get("/api/goals", require("./routes/goalroutes"))
+app.use("/api/goals", require("./routes/goalroutes"))
 
 app.listen(port, () => console.log(`listening on port: ${port}`));
